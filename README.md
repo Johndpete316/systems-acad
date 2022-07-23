@@ -184,6 +184,11 @@ If any bugs come up, or the lab somehow breaks during the week (*we will make su
 
 ![Network Diagram](https://www.purplecloud.network/images/pce.png)
 
+# Credits
+
+@iknowjason and the PurpleCloud project for powering this lab.
+Huge thanks for the help and support thus far. 
+
 
 
 
