@@ -34,13 +34,22 @@ Now move into that folder with `cd`
 
 You can type `pwd` again to see that your current 'working directory' has changed.
 
+## Clone the PurpleCloud Repository
+
+The PurpleCloud repository by @iknowjason is a set of tools used to generate terraform files that are then used to generate the labs. Think of it as a template that we will use to generate scripts to be applied to Azure later on in this lab. 
+
+`git clone https://github.com/iknowjason/PurpleCloud`
+
+`cd PurpleCloud`
+
+
 ## Download and install terraform
 
 First, download the terraform executable for windows 64-bit.  
 
 https://www.terraform.io/downloads
 
-Now, using either the windows file explorer or the command line, move the terraform executable into your working directory. 
+Now, using either the windows file explorer or the command line, move the terraform executable into the recently downloaded PurpleCloud repository.
 
 For the rest of the lab if you need to run a terraform command y ou can use `.\terraform.exe <command>`
 
