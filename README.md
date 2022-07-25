@@ -16,7 +16,7 @@ The following instructions will explain how to build, and maintain the Azure Ran
 
 
 
-# Seting up the environnment. 
+# Seting up the environment. 
 
 ## Create a working directory. 
 
