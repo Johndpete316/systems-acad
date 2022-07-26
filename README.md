@@ -16,15 +16,15 @@ The following instructions will explain how to build, and maintain the Azure Ran
 
 
 
-# Seting up the enviornment. 
+# Seting up the environment. 
 
 ## Create a working directory. 
 
-On windows, open up the command prompt. We will be using (windows temrinal or WSL). 
+On windows, open up the command prompt. We will be using (windows terminal or WSL). 
 
 The current directory should be your users home directory `C:\Users\GLRadmin\`. You can see this by typing `pwd` in the terminal window. 
 
-Now create a new folder, this will be your woking directory for the lab. I will be using `AzureLab`. 
+Now create a new folder, this will be your working directory for the lab. I will be using `AzureLab`. 
 
 `mkdir AzureLab`
 
@@ -51,15 +51,15 @@ https://www.terraform.io/downloads
 
 Now, using either the windows file explorer or the command line, move the terraform executable into the recently downloaded PurpleCloud repository.
 
-For the rest of the lab if you need to run a terraform command y ou can use `.\terraform.exe <command>`
+For the rest of the lab if you need to run a terraform command you can use `.\terraform.exe <command>`
 
-## Next we ned to log in to azure. You each will have recieved an azure username and login. 
+## Next we need to log in to azure. You each will have recieved an azure username and login. 
 
 Your username will be in the following format 
 
 `First.Lastname@xyz.onmicrosoft.com`
 
-An you will be given a default random password will you will have to change at signin. 
+And you will be given a default random password which you will have to change at signin. 
 Please skip any prompts reguarding 2 Factor Authentication.
 
 To log into the Azure CLI tool, we can run
@@ -91,7 +91,7 @@ Once the webpage confirms the signon is complete, you can close it out and test 
 
 ## Required python libraries. 
 
-Finally we will want to install faker, a python library required by the scrip used to generate the terraform files. 
+Finally we will want to install faker, a python library required by the script used to generate the terraform files. 
 
 `python3 -m pip install faker`
 
@@ -99,7 +99,7 @@ Finally we will want to install faker, a python library required by the scrip us
 
 # Creating the lab
 
-Firt create the environment using `ad.py`. You want to make sure for our setup during the week you have all of these switches enabled on the command. For the `resource_group` please replace First-Lastname with your name
+First create the environment using `ad.py`. You want to make sure for our setup during the week you have all of these switches enabled on the command. For the `resource_group` please replace First-Lastname with your name
 
 For more information on what each switch does, you can see the PurpleCloud documentaion. 
 https://www.purplecloud.network/usage/#advanced-usage
@@ -142,23 +142,22 @@ Finally, we can apply these templates to azure using `teraform apply`.
 
 `$ .\terraform.exe apply out.plan`
 
-With our current setup this could take anywhere from 20 - 30 minutes. Do not close the terminal window or shut down the machine you ran the command from. This is where you are most likey to run into errors. If anything comes up, take your time and read it slowly. Google any keywords you see. If you are having a hard time deciphering it, ask an intructor for help. 
+With our current setup this could take anywhere from 20 - 30 minutes. Do not close the terminal window or shut down the machine you ran the command from. This is where you are most likely to run into errors. If anything comes up, take your time and read it slowly. Google any keywords you see. If you are having a hard time deciphering it, ask an instructor for help. 
 
 
 
 # testing the lab environment
 
-Finally we need to test the lab enviornment. 
+Finally we need to test the lab environment. 
 
 ## Locating a machines public IP address
 
 
-1. Expaned the toolbar on the lefhand side. 
+1. Expand the toolbar on the lefthand side. 
 2. Click on resource groups.
 3. Select the resource group you created. 
 4. Find the `velocihelk` machine. 
 5. Locate the machines `Public IP address`. (should begin with a 20)
-6. 
 
 ## Try accessing Kabana UI. 
 
@@ -170,7 +169,7 @@ Finally we need to test the lab enviornment.
 
 ## Accessing the domain Controller
 
-1. Expaned the toolbar on the lefhand side. 
+1. Expand the toolbar on the lefthand side. 
 2. Click on resource groups.
 3. Select the resource group you created. 
 4. Find the `dc1` machine. 
@@ -178,12 +177,12 @@ Finally we need to test the lab enviornment.
 6. Select `RDP` from the dropdown menu. 
 7. Open the downloaded file. 
 
-**Note: Anytime you destory and create the enviroment all device public IPs chagne meaning you will have to remember and re-use this process throughout the week. You can always come back here for a reference if neeeded.**
+**Note: Anytime you destory and create the environment all device public IPs change meaning you will have to remember and re-use this process throughout the week. You can always come back here for a reference if neeeded.**
 
 
 # Destroy the Lab
 
-If any bugs come up, or the lab somehow breaks during the week (*we will make sure that happens* 😉) You can easly destory the lab. 
+If any bugs come up, or the lab somehow breaks during the week (*we will make sure that happens* 😉) You can easily destroy the lab. 
 
 1. Make sure you are in the working directory where the lab was created from (Ex. `C:\Users\GLRadmin\AzureLab`)
 2. Run `.\terraform.exe destroy`
