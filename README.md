@@ -53,7 +53,7 @@ Now, using either the windows file explorer or the command line, move the terraf
 
 For the rest of the lab if you need to run a terraform command you can use `.\terraform.exe <command>`
 
-## Next we ned to log in to azure. You each will have recieved an azure username and login. 
+## Next we need to log in to azure. You each will have recieved an azure username and login. 
 
 Your username will be in the following format 
 
