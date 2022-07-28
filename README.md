@@ -1,6 +1,6 @@
 # Lab Goals
 
-- Create a reproducable training envrionment for use during the GLR Cybersecurity Academy. 
+- Create a reproducible training environment for use during the GLR Cybersecurity Academy. 
 - Gain a basic understanding of what terraform is, and how it works. 
 - Learn essential troubleshooting skills that will transfer well into any computer science related field
 
@@ -53,14 +53,14 @@ Now, using either the windows file explorer or the command line, move the terraf
 
 For the rest of the lab if you need to run a terraform command you can use `.\terraform.exe <command>`
 
-## Next we need to log in to azure. You each will have recieved an azure username and login. 
+## Next we need to log in to azure. You each will have received an azure username and login. 
 
 Your username will be in the following format 
 
 `First.Lastname@xyz.onmicrosoft.com`
 
 And you will be given a default random password which you will have to change at signin. 
-Please skip any prompts reguarding 2 Factor Authentication.
+Please skip any prompts regarding 2 Factor Authentication.
 
 To log into the Azure CLI tool, we can run
 
@@ -101,7 +101,7 @@ Finally we will want to install faker, a python library required by the script u
 
 First create the environment using `ad.py`. You want to make sure for our setup during the week you have all of these switches enabled on the command. For the `resource_group` please replace First-Lastname with your name
 
-For more information on what each switch does, you can see the PurpleCloud documentaion. 
+For more information on what each switch does, you can see the PurpleCloud documentation. 
 https://www.purplecloud.network/usage/#advanced-usage
 
 
@@ -113,7 +113,7 @@ python3 ad.py --domain_controller --ad_domain MrRobot.local --admin GLRadmin --p
 
 ## Initialize Terraform
 
-Now that the teraform files are generated we are going to run some terraform specific commands using the CLI we installed earlier. 
+Now that the terraform files are generated we are going to run some terraform specific commands using the CLI we installed earlier. 
 
 `$ .\terraform.exe init`
 
@@ -177,7 +177,7 @@ Finally we need to test the lab environment.
 6. Select `RDP` from the dropdown menu. 
 7. Open the downloaded file. 
 
-**Note: Anytime you destory and create the environment all device public IPs change meaning you will have to remember and re-use this process throughout the week. You can always come back here for a reference if neeeded.**
+**Note: Anytime you destroy and create the environment all device public IPs change meaning you will have to remember and re-use this process throughout the week. You can always come back here for a reference if needed.**
 
 
 # Destroy the Lab
